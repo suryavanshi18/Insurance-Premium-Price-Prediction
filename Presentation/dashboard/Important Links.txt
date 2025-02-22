@@ -1,0 +1,5 @@
+Database Link - https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sinsurance-insights-450015!2sInsurance_Data!3sInsuranc_Table-2025-02-13T23_29_53
+
+
+
+Dashboard Link - https://project.novypro.com/7mFQUe

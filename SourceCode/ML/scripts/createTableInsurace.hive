@@ -1,0 +1,37 @@
+-- Drop the table if it already exists to avoid errors during table creation
+drop table if exists insurance;
+
+-- Create a new table 'insurance' with specified column names and data types
+create table insurance
+(
+    id int,
+    Age float,
+    Gender string,
+    `Annual Income` float,
+    `Marital Status` string,
+    `Number of Dependents` float,
+    `Education Level` string,
+    Occupation string,
+    `Health Score` float,
+    `Location` string,
+    `Policy Type` string,
+    `Previous Claims` float,
+    `Vehicle Age` float,
+    `Credit Score` float,
+    `Insurance Duration` float,
+    `Policy Start Date` string,
+    `Customer Feedback` string,
+    `Smoking Status` string,
+    `Exercise Frequency` string,
+    `Property Type` string,
+    `Premium Amount` float
+)
+row format delimited
+fields terminated by ',';  -- Comma separated fields
+
+-- Load data from a local file 'Insurance Premium Prediction.csv' into the 'insurance' table
+load data local inpath 'Insurance Premium Prediction.csv' into table insurance;
+
+-- Command to run this script in the Hive CLI
+-- Run the following command on CLI to execute the script:
+-- hive -f createTableInsurace.hive
